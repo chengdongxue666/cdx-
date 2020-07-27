@@ -5,5 +5,6 @@ class SgClass:
         pass
     def __str__(self):
         return '%s 的颜色是 %s'%(self.name,self.color)
+
 pg=SgClass('苹果','红色')
 print(pg)
