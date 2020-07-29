@@ -15,3 +15,4 @@ print(xw.__slots__)
 
 #子类没有声明slots时，不会继承父类的slots属性声明限制
 #子类声明slots时，将会继承父类的这个slots的范围，也就是子类slots的范围是其自身+父类的__slots__
+#并且父类中slots属性中有限制的，尽量不要在子类slots中再进行限制，避免浪费内存
